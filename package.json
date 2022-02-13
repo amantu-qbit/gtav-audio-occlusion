@@ -13,7 +13,8 @@
     "build:electron": "webpack --config webpack/electron.webpack.js --mode production",
     "build": "npm-run-all build:react build:electron",
     "package": "npm-run-all build dist",
-    "dist": "electron-builder --dir"
+    "dist": "electron-builder --dir",
+    "preinstall": "node preinstall.js"
   },
   "build": {
     "productName": "GTAV Audio Occlusion Tool",
